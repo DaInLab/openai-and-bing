@@ -2,10 +2,10 @@
 # Variáveis: idade, gênero e salário.
 # Criar um conjunto de dados grande (100 milhões de linhas)
 df <- data.frame(
-  idade = sample(18:65, 100000000, replace = TRUE),
+  idade = sample(18:65, 1000000, replace = TRUE),
   genero = sample(c("feminino", "masculino", "lesbica", "gay", "bissexual", 
                     "transgenero", "queer", "intersexual", "assexual", "pansexuais"),
-                     100000000, replace = TRUE),
+                  1000000, replace = TRUE),
   salario = abs(rnorm(10))*10000
 )
 

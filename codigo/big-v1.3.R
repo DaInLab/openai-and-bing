@@ -14,7 +14,7 @@ testa.bib("dplyr")
 library(dplyr)
 
 # Ler um arquivo de dados grande (por exemplo, um arquivo CSV)
-dados <- read.csv("caminho/para/o/arquivo.csv")
+dados <- read.csv("./dados/bigdatateste.csv")
 
 # Realizar uma análise exploratória simples
 resultados <- dados %>%
