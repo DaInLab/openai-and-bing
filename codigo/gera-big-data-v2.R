@@ -1,14 +1,14 @@
 # Gerando um grande banco de dados
 # Variáveis: idade, gênero e salário.
-# Criar um conjunto de dados grande (100 milhões de linhas)
+# Criar um conjunto de dados grande (10 milhões de linhas)
 df <- data.frame(
-  idade = sample(18:65, 1000000, replace = TRUE),
+  idade = sample(18:65, 10000000, replace = TRUE),
   genero = sample(c("feminino","masculino","lesbica","gay",
                     "bissexual","transgenero","queer","intersexual",
-                    "assexual","pansexuais"),100, 
+                    "assexual","pansexuais"),10000000, 
                   replace = TRUE,
                   prob = c(40.75,38,8,10,1,1,0.5,0.25,0.25,0.25)),
-  salario = sample(1320:13200, 1000000, replace = TRUE)
+  salario = sample(1320:13200, 10000000, replace = TRUE)
 )
 
 # Gravando big data
